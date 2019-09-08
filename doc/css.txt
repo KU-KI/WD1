@@ -1,0 +1,57 @@
+Cascading Style Sheet
+So, what cascading means? “Cascading” in this context means choosing the css rules by cascading down the more general rules to the more specific rule required.
+
+
+What are the ways to use CSS?
+
+1. External: <link> tag inside <head> tag to use external CSS files.
+<link rel="stylesheet" href="styles.css">
+
+2. Internal: <style> tag 
+<head>
+    <style>
+        /* styles goes here */
+    </style>
+</head>
+You might be wondering that why are we using /* */ inside html. Because, in CSS, the comment works this way only. Whether you write CSS in external file with .css extension or inside the <style> tag.
+
+3. Inline: using style attribute on HTML elements
+<div style="background-color: red;"></div>
+
+
+Syntax for writing CSS:
+
+Selector {
+    property: value;
+}
+
+An explanation:
+Selector is the value which will determine which element the style need to be applied.
+- property is the name of the style property to be used
+- value here denotes the style value that a property should have which will be visible on the element with particular selector
+- ; denotes the end of that particular property/value pair and we can add another property/value pair after that
+Curly brackets denotes one block of style properties for the Selector
+
+
+Cascading Order:
+
+Priority 1: Inline styles
+Priority 2: External and Internal stylesheets
+Priority 3: Browser defaults
+Important thing to note here is that if a style is defined with same priority, the last one has the highest priority. (Cascading rules)
+
+
+Frequently used selectors list:
+
+*					- všetko
+.class				- príslušná trieda
+#id					- príslušný identifikátor
+element				- jeden element, tag (h1, p, div ...)
+element, element	- platí pre viacero elementov naraz
+element > element	- element ako prvá úroveò v elemente (napr. p priamo pod div)
+element + element	- element hneï po elemente (napr. p, ktoré nasleduje hneï po div)
+element element		- každý element v elemente (napr. každé p v div)
+:hover				- zmena pri pohybe myšou nad elementom (napr. .heading:hover)
+:first-child		- prvý child element
+:last-child			- posledný child element
+!important			- nedovolí ïalšiu zmenu (napr. color: blue !important;)

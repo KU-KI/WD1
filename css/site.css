@@ -1,0 +1,76 @@
+body {
+    /* if the user's computer has Arial, use that, if not Helvetica, 
+  then fall back to the operating system's default sans-serif font */
+    font-family: Arial, Helvetica, sans-serif;
+    /*font-family: 'Chilanka', cursive;*/
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 1em;
+    grid-template-areas: "header header header" "sidebar-1 article sidebar-2" "footer footer footer";
+}
+
+/*#Method 1: Specifying Grid Columns*/
+header {
+    /* Start on Row 1 */
+    grid-row: 1;
+    /* Start on the first column line and extend all the to the last column line */
+    grid-column: 1 / 4;
+}
+
+.sidebar-left {
+    /* Start on Row 2 */
+    grid-row: 2;
+    /* Start on the first column line and stop at the next column line */
+    grid-column: 1 / 2;
+}
+
+article {
+    /* Start on Row 2 */
+    grid-row: 2;
+    /* Start on the second column line and stop at the third column line */
+    grid-column: 2 / 3;
+}
+
+.sidebar-right {
+    /* Start on Row 2 */
+    grid-row: 2;
+    /* Start on the third column line and stop at the last column line */
+    grid-column: 3 / 4;
+}
+
+footer {
+    /* Start on Row 3, the last row */
+    grid-row: 3;
+    /* Start on the first column line and extend all the to the last column line */
+    grid-column: 1 / 4;
+}
+
+/*#Method 2: Condense the Markup from the First Method*/
+header, footer {
+    grid-column: 1 / 4;
+}
+
+/*#Method 3: Defining Grid Template Areas*/
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.sidebar-left {
+    grid-area: sidebar-1;
+}
+
+article {
+    grid-area: article;
+}
+
+.sidebar-right {
+    grid-area: sidebar-2;
+}
