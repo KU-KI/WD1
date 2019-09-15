@@ -5,6 +5,14 @@ body {
     /*font-family: 'Chilanka', cursive;*/
 }
 
+html, body {
+    /*margin: 0;*/
+}
+
+* {
+    outline: 2px solid red;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 150px auto 150px;
@@ -12,6 +20,7 @@ body {
     grid-gap: 1em;
     grid-template-areas: "header header header" "sidebar-1 article sidebar-2" "footer footer footer";
 }
+
 
 /*#Method 1: Specifying Grid Columns*/
 header {
@@ -49,10 +58,12 @@ footer {
     grid-column: 1 / 4;
 }
 
+
 /*#Method 2: Condense the Markup from the First Method*/
 header, footer {
     grid-column: 1 / 4;
 }
+
 
 /*#Method 3: Defining Grid Template Areas*/
 header {
