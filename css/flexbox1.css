@@ -1,0 +1,43 @@
+﻿body {
+}
+
+/*Flexbox - Fixný percentuálny pomer*/
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content {
+    flex-basis: 75%;
+    background: rgba(0, 255, 0, 0.25);
+}
+
+.sidebar {
+    flex-basis: 25%;
+    background: rgba(255, 216, 0, 0.25);
+}
+
+p {
+    text-align: center;
+    padding: 1em 0;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+/*Flexbox - Fixné medzery*/
+.fixed-gutter-grid
+.column {
+    width: calc((100% - (11 * 20px)) / 12);
+    margin-right: 20px;
+    float: left;
+    height: 80px;
+    background: rgba(0, 148, 255, 0.25);
+}
+
+.column:last-child {
+    margin-right: 0;
+}
