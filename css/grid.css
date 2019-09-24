@@ -11,7 +11,7 @@ html, body {
     grid-template-columns: 150px auto 150px;
     grid-template-rows: repeat(3, 100px);
     grid-gap: 1em;
-    grid-template-areas: "simon simon simon" 
+    grid-template-areas: "header header header" 
                          "sidebar-1 article sidebar-2" 
                          "footer footer footer";
 }
@@ -62,7 +62,7 @@ header, footer {
 
 /*#Method 3: Defining Grid Template Areas*/
 header {
-    grid-area: simon;
+    grid-area: header;
 }
 
 footer {
