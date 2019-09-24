@@ -1,0 +1,49 @@
+﻿body {
+    /* if the user's computer has Arial, use that, if not Helvetica, 
+  then fall back to the operating system's default sans-serif font */
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+    font-family: Lucida Bright,Georgia,serif;
+    font-size: 3.5em;
+    text-shadow: 2px 2px 0px #ffd800;
+}
+
+h3 {
+    /*display: none;*/
+    /*text-transform: uppercase;*/
+    text-decoration: underline;
+}
+
+p {
+    line-height: 30px;
+    font-weight: normal;
+    width: 60%;
+    margin: 30px auto;
+    text-align: justify;
+    /*text-indent: 100px;*/
+    /*letter-spacing: 3px;*/
+    /*word-spacing: 5px;*/
+}
+
+a {
+    /*display: block;*/
+    background: #00ffff;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 3px 8px 3px 2px;
+    border-radius: 5px 12px;
+}
+
+    a:hover {
+        font-style: italic;
+    }
+
+strong {
+    color: deeppink;
+    /*font-variant: small-caps;*/
+}

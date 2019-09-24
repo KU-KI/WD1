@@ -1,5 +1,5 @@
 Cascading Style Sheet
-So, what cascading means? ìCascadingî in this context means choosing the css rules by cascading down the more general rules to the more specific rule required.
+ìCascadingî in this context means choosing the css rules by cascading down the more general rules to the more specific rule required.
 
 
 What are the ways to use CSS?
@@ -41,7 +41,7 @@ Priority 3: Browser defaults
 Important thing to note here is that if a style is defined with same priority, the last one has the highest priority. (Cascading rules)
 
 
-Frequently used selectors list:
+NajËastejöie pouûÌvanÈ selektory:
 
 *					- vöetko
 .class				- prÌsluön· trieda
@@ -54,4 +54,38 @@ element element		- kaûd˝ element v elemente (napr. kaûdÈ p v div)
 :hover				- zmena pri pohybe myöou nad elementom (napr. .heading:hover)
 :first-child		- prv˝ child element
 :last-child			- posledn˝ child element
+:nth-child(odd) or tr:nth-child(2n+1)	- kaûd˝ nep·rny element (1, 3, 5, ...)
+:nth-child(even) or tr:nth-child(2n)	- kaûd˝ p·rny element (2, 4, 6, ...)
+:nth-child(7)		- siedmy element
+:nth-child(-n+3)	- prvÈ tri elementy
 !important			- nedovolÌ Ôalöiu zmenu (napr. color: blue !important;)
+
+
+========================================
+EM vs REM:
+________________________________________
+1em = aktu·lna veækosù font-size
+
+h1 {
+  font-size: 2em;     /* 1em = 16px */
+  margin-bottom: 1em; /* 1em = 32px */
+}
+
+p {
+  font-size: 1em;     /* 1em = 16px */
+  margin-bottom: 1em; /* 1em = 16px */
+}
+________________________________________
+1rem = aktu·lna veækosù root/html font-size
+
+h1 {
+  font-size: 2rem;     /* 1rem = 32px */
+  margin-bottom: 1rem; /* 1rem = 16px */
+}
+
+p {
+  font-size: 1rem;     /* 1rem = 16px */
+  margin-bottom: 1rem; /* 1rem = 16px */
+}
+________________________________________
+
