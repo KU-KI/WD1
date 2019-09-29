@@ -1,0 +1,12 @@
+﻿#flex {
+    display: flex;
+    flex-flow: row wrap;
+    width: 500px;
+}
+
+.item {
+    width: 150px;
+    background: #0094ff;
+    border: 1px solid black;
+    /*flex: auto;*/
+}
