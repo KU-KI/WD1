@@ -10,17 +10,14 @@ h4 {
     padding-bottom: 1em;
 }
 
-.gallery__item {
-    background: rgba(0, 128, 0, 0.25);
-}
-
 .flexbox {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-    .flexbox .gallery__item {
-        flex-basis: 32.2033898305%;
-        margin-top: 1.6949152542%;
-    }
+.gallery__item {
+    background: rgba(0, 128, 0, 0.25);
+    flex-basis: 32.2033898305%;
+    margin-top: 1.6949152542%;
+}
