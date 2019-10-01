@@ -1,4 +1,8 @@
-﻿.forecast {
+﻿html {
+    margin: 0px;
+}
+
+.forecast {
     margin: 0;
     padding: .3rem;
     background-color: #eee;
