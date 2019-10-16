@@ -1,25 +1,24 @@
 ﻿body {
     /* if the user's computer has Arial, use that, if not Helvetica, 
   then fall back to the operating system's default sans-serif font */
-    font-family: Arial, Helvetica, sans-serif;
-    /*font-family: 'Pacifico', cursive;*/
-    text-align: center;
-    -webkit-font-smoothing: antialiased;
+    font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
 }
 
 h1 {
-    font-family: Lucida Bright,Georgia,serif;
+    font-family: Papyrus,fantasy;
     font-size: 3.5em;
     text-shadow: 2px 2px 0px #ffd800;
 }
 
 h3 {
     /*display: none;*/
+    font-family: 'Wendy One', sans-serif;
     /*text-transform: uppercase;*/
-    text-decoration: underline;
+    /*text-decoration: overline;*/
 }
 
 p {
+    font-family: 'Big Shoulders Text', cursive;
     line-height: 30px;
     font-weight: normal;
     width: 60%;
@@ -32,6 +31,7 @@ p {
 
 a {
     /*display: block;*/
+    font-family: Lucida Sans Typewriter,Lucida Console,monaco,Bitstream Vera Sans Mono,monospace;
     background: #00ffff;
     text-decoration: none;
     font-weight: bolder;
@@ -45,5 +45,6 @@ a {
 
 strong {
     color: deeppink;
+    font-size: 2rem;
     /*font-variant: small-caps;*/
 }
