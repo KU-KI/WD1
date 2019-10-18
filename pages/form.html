@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="utf-8" />
+    <title>FORMULÁR</title>
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+
+    <div class="form-main">
+        <div class="form-div">
+            <form action="form.html" method="get">
+
+                <fieldset>
+                    <legend>Formulár</legend>
+
+                    <p class="name">
+                        <input name="meno" type="text" class="feedback-input name" placeholder="Meno" required />
+                    </p>
+
+                    <p class="email">
+                        <input name="email" type="text" class="feedback-input email" placeholder="Email" required />
+                    </p>
+
+                    <div class="flex">
+                        <h3>Pohlavie:</h3>
+                        <select name="pohlavie">
+                            <option value="muž">muž</option>
+                            <option value="žena">žena</option>
+                        </select>
+                    </div>
+
+                    <div class="flex">
+                        <h3>Vek:</h3>
+                        <input type="radio" name="vek" value="do10" checked>do 10
+                        <input type="radio" name="vek" value="do30">11-30
+                        <input type="radio" name="vek" value="nad30">31 a viac
+                    </div>
+
+                    <div class="flex">
+                        <h3>Situácia:</h3>
+                        <input type="checkbox" name="situacia" value="ženatý">ženatý
+                        <input type="checkbox" name="situacia" value="deti">deti
+                        <input type="checkbox" name="situacia" value="bohatý">bohatý
+                        <input type="checkbox" name="situacia" value="VŠ">VŠ
+                    </div>
+
+                    <div class="flex">
+                        <h3>Obľúbená farba:</h3>
+                        <input type="color" name="favFarba" value="#ff0000">
+                    </div>
+
+                    <div class="flex">
+                        <h3>Dátum narodenia:</h3>
+                        <input type="date" name="narodeniny" required>
+                    </div>
+
+                    <div class="flex">
+                        <h3>Fotografia:</h3>
+                        <input type="file" name="foto" required>
+                    </div>
+
+                    <p class="text">
+                        <textarea name="text" class="feedback-input comment" placeholder="Comment">
+                    </textarea>
+                    </p>
+
+                    <div class="submit">
+                        <input type="submit" value="ODOSLAŤ" class="odoslat" />
+                        <div class="ease">
+                        </div>
+                    </div>
+
+                </fieldset>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
