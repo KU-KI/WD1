@@ -8,9 +8,9 @@ html {
     color: white;
 }
 
-h3 {
+label {
     font-weight: 400;
-    padding: 0px 5px;
+    padding: 0px 5px 0 0;
 }
 
 legend {
