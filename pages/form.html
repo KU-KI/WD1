@@ -14,17 +14,17 @@
                 <fieldset>
                     <legend>Formulár</legend>
 
-                    <p class="name">
-                        <input name="meno" type="text" class="feedback-input name" placeholder="Meno" required />
+                    <p>
+                        <input type="text" id="meno" name="meno" class="feedback-input" placeholder="Meno" required />
                     </p>
 
-                    <p class="email">
-                        <input name="email" type="text" class="feedback-input email" placeholder="Email" required />
+                    <p>
+                        <input type="text" id="email" name="email" class="feedback-input" placeholder="Email" required />
                     </p>
 
                     <div class="flex">
                         <label for="pohlavie">Pohlavie:</label>
-                        <select name="pohlavie" id="pohlavie">
+                        <select id="pohlavie" name="pohlavie">
                             <option value="muž">muž</option>
                             <option value="žena">žena</option>
                         </select>
@@ -32,41 +32,41 @@
 
                     <div class="flex">
                         <label for="vek">Vek:</label>
-                        <input type="radio" name="vek" id="vek" value="do10" checked>do 10
-                        <input type="radio" name="vek" id="vek" value="do30">11-30
-                        <input type="radio" name="vek" id="vek" value="nad30">31 a viac
-                    </div>
+                        <input type="radio" id="vek" name="vek" value="do10" checked>do 10
+                        <input type="radio" id="vek" name="vek" value="do30">11-30
+                        <input type="radio" id="vek" name="vek" value="nad30">31 a viac
+                    </div>                 
 
                     <div class="flex">
                         <label for="situacia">Situácia:</label>
-                        <input type="checkbox" name="situacia" id="situacia" value="ženatý">ženatý
-                        <input type="checkbox" name="situacia" id="situacia" value="deti">deti
-                        <input type="checkbox" name="situacia" id="situacia" value="bohatý">bohatý
-                        <input type="checkbox" name="situacia" id="situacia" value="VŠ">VŠ
+                        <input type="checkbox" id="situacia" name="situacia" value="ženatý">ženatý
+                        <input type="checkbox" id="situacia" name="situacia" value="deti">deti
+                        <input type="checkbox" id="situacia" name="situacia" value="bohatý">bohatý
+                        <input type="checkbox" id="situacia" name="situacia" value="VŠ">VŠ
                     </div>
 
                     <div class="flex">
                         <label for="favFarba">Obľúbená farba:</label>
-                        <input type="color" name="favFarba" id="favFarba" value="#ff0000">
+                        <input type="color" id="favFarba" name="favFarba" value="#ff0000">
                     </div>
 
                     <div class="flex">
                         <label for="narodeniny">Dátum narodenia:</label>
-                        <input type="date" name="narodeniny" id="narodeniny" required>
+                        <input type="date" id="narodeniny" name="narodeniny"  required>
                     </div>
 
                     <div class="flex">
                         <label for="foto">Fotografia:</label>
-                        <input type="file" name="foto" id="foto" required>
+                        <input type="file" id="foto" name="foto" required>
                     </div>
 
-                    <p class="text">
-                        <textarea name="text" class="feedback-input comment" placeholder="Comment">
+                    <p>
+                        <textarea id="text" name="text" class="feedback-input" placeholder="Komentár">
                     </textarea>
                     </p>
 
                     <div class="submit">
-                        <input type="submit" value="ODOSLAŤ" class="odoslat" />
+                        <input type="submit" id="odoslat" value="ODOSLAŤ"/>
                         <div class="ease">
                         </div>
                     </div>
