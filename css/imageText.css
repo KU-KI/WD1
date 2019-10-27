@@ -1,0 +1,18 @@
+﻿.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+    .wrapper .text {
+        background: url("https://images.unsplash.com/photo-1500622944204-b135684e99fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80") no-repeat center center fixed;
+        background-size: cover;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-size: 120px;
+        font-weight: bolder;
+        -webkit-text-stroke: 5px rgba(255, 255, 0, 0.5);
+        overflow: hidden;
+    }
