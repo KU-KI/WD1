@@ -47,18 +47,23 @@ Najèastejšie používané selektory:
 .class				- príslušná trieda
 #id					- príslušný identifikátor
 element				- jeden element, tag (h1, p, div ...)
+
 element, element	- platí pre viacero elementov naraz
-element > element	- element ako prvá úroveò v elemente (napr. p priamo pod div)
-element + element	- element hneï po elemente (napr. p, ktoré nasleduje hneï po div)
-element element		- každý element v elemente (napr. každé p v div)
-:hover				- zmena pri pohybe myšou nad elementom (napr. .heading:hover)
-:first-child		- prvý child element
+element > element	- element ako prvá úroveò v elemente (napr.: p priamo pod div)
+element + element	- element hneï po elemente (napr.: p, ktoré nasleduje hneï po div)
+element element		- každý element v elemente (napr.: každé p v div)
+
+:hover				- zmena pri pohybe myšou nad elementom (napr.: .heading:hover)
+:focus				- platí pre práve aktívny element 
+:first-child		- prvý child element (napr.: li:first-child)
 :last-child			- posledný child element
+:only-child			- platí pre child element, ktorý je jediný pod parent elementom (napr.: jediný li element v ul)
 :nth-child(odd) or tr:nth-child(2n+1)	- každý nepárny element (1, 3, 5, ...)
 :nth-child(even) or tr:nth-child(2n)	- každý párny element (2, 4, 6, ...)
 :nth-child(7)		- siedmy element
 :nth-child(-n+3)	- prvé tri elementy
-!important			- nedovolí ïalšiu zmenu (napr. color: blue !important;)
+
+!important			- nedovolí ïalšiu zmenu (napr.: color: blue !important;)
 
 
 ========================================
