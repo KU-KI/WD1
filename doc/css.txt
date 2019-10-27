@@ -19,10 +19,10 @@ You might be wondering that why are we using /* */ inside html. Because, in CSS,
 <div style="background-color: red;"></div>
 
 
-Syntax for writing CSS:
+Syntax pre zápis CSS:
 
 Selector {
-    property: value;
+    vlastnos: hodnota;
 }
 
 An explanation:
@@ -33,12 +33,12 @@ Selector is the value which will determine which element the style need to be ap
 Curly brackets denotes one block of style properties for the Selector
 
 
-Cascading Order:
+Poradie dôleitosti CSS zápisov:
 
-Priority 1: Inline styles
-Priority 2: External and Internal stylesheets
-Priority 3: Browser defaults
-Important thing to note here is that if a style is defined with same priority, the last one has the highest priority. (Cascading rules)
+Priorita 1: Inline zápisy
+Priorita 2: Externı a Internı stylesheet
+Priorita 3: Defaultné hodnoty prehliadaèa
+	Ak je priorita CSS zápisov rovnaká, platí zápis, ktorı je poslednı.
 
 
 Najèastejšie pouívané selektory:
