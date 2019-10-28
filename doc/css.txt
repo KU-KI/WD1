@@ -1,57 +1,57 @@
-Cascading Style Sheet
-“Cascading” in this context means choosing the css rules by cascading down the more general rules to the more specific rule required.
+KASKÁDOVÉ ŠTÝLY
+CSS = Cascading Style Sheet
+“Cascading” v tomto kontexte znamená postupné uplatòovanie zápisov od všeobecnejších ku špecifickejším.
 
 
-What are the ways to use CSS?
+Spôsoby použitia CSS:
+	1. Externý:
+		<head>
+			<link rel="stylesheet" href="styles.css">
+		</head>
 
-1. External: <link> tag inside <head> tag to use external CSS files.
-<link rel="stylesheet" href="styles.css">
+	2. Interný:
+		<head>
+			<style>
+				/* CSS zápisy pre štýlovanie html dokumentu */
+			</style>
+		</head>
 
-2. Internal: <style> tag 
-<head>
-    <style>
-        /* styles goes here */
-    </style>
-</head>
-You might be wondering that why are we using /* */ inside html. Because, in CSS, the comment works this way only. Whether you write CSS in external file with .css extension or inside the <style> tag.
-
-3. Inline: using style attribute on HTML elements
-<div style="background-color: red;"></div>
+	3. Inline:
+		<div style="background-color: red;"></div>
 
 
-Syntax pre zápis CSS:
-
-Selector {
-    vlastnos: hodnota;
-}
-
-An explanation:
-Selector is the value which will determine which element the style need to be applied.
-- property is the name of the style property to be used
-- value here denotes the style value that a property should have which will be visible on the element with particular selector
-- ; denotes the end of that particular property/value pair and we can add another property/value pair after that
-Curly brackets denotes one block of style properties for the Selector
+Syntax pre jednotlivé zápisy CSS:
+	Selector {
+		vlastnos_1: hodnota_1;
+		vlastnos_2: hodnota_2;
+		...
+	}
 
 
 Poradie dôležitosti CSS zápisov:
+	1: Inline zápisy					- max. priorita
+	2: Externý a Interný stylesheet
+	3: Defaultné hodnoty prehliadaèa
 
-Priorita 1: Inline zápisy
-Priorita 2: Externý a Interný stylesheet
-Priorita 3: Defaultné hodnoty prehliadaèa
-	Ak je priorita CSS zápisov rovnaká, platí zápis, ktorý je posledný.
+Priorita (váha) selektorov:
+	1. id		- max. priorita
+	2. class
+	3. element
+
+Ak je priorita CSS zápisov rovnaká, platí zápis, ktorý je posledný.
 
 
 Najèastejšie používané selektory:
 
 *					- všetko
+element				- jeden element, tag (h1, p, div ...)
 .class				- príslušná trieda
 #id					- príslušný identifikátor
-element				- jeden element, tag (h1, p, div ...)
 
 element, element	- platí pre viacero elementov naraz
-element > element	- element ako prvá úroveò v elemente (napr.: p priamo pod div)
+elementelement		- každý element v elemente (napr.: každé p v div)
+element > element	- element ako prvá úroveò v elemente (napr.: všetky p priamo pod div)
 element + element	- element hneï po elemente (napr.: p, ktoré nasleduje hneï po div)
-element element		- každý element v elemente (napr.: každé p v div)
 
 :hover				- zmena pri pohybe myšou nad elementom (napr.: .heading:hover)
 :focus				- platí pre práve aktívny element 
