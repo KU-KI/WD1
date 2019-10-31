@@ -1,2 +1,15 @@
 ﻿body {
+    background: #ffd800;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align:center;
+}
+
+div {
+    display: inline-block;
+    background: #ff6a00;
+    margin: 20px 0;
+    padding: 10px 5px;
+    text-align:center;
+    border: 1px solid #000000;
+    border-radius: 10px;
 }
