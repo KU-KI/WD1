@@ -1,0 +1,143 @@
+﻿body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: #d0d0d0;
+    text-align: center;
+}
+
+.flexbox {
+    display: inline-flex;
+    flex-direction: column;
+    outline: 1px solid black;
+}
+
+.normal {
+    width: 150px;
+    height: 50px;
+    background: #ff0000;
+    opacity: .8;
+}
+
+.translate {
+    width: 150px;
+    height: 50px;
+    background: #ff0000;
+    opacity: .8;
+    transform: translate(100px, 50px);  /* posun v osi X a Y */
+}
+
+.rotate {
+    margin-top: 100px;
+    width: 150px;
+    height: 50px;
+    background: #ff0000;
+    opacity: .8;
+    transform: rotate(20deg);
+}
+
+.translate_rotate {
+    margin-top: 100px;
+    width: 150px;
+    height: 50px;
+    background: #ff0000;
+    opacity: .8;
+    transform: translate(100px, 10px) rotate(20deg);
+}
+
+.scale {
+    margin-top: 100px;
+    width: 150px;
+    height: 50px;
+    background: #ff0000;
+    opacity: .8;
+    transform: scale(2, 3); /* násobky width a height */
+}
+
+.scaleX {
+    margin-top: 100px;
+    width: 150px;
+    height: 50px;
+    background: #ff0000;
+    opacity: .8;
+    transform: scaleX(0.5);
+}
+
+.scaleY {
+    margin-top: 100px;
+    width: 150px;
+    height: 50px;
+    background: #ff0000;
+    opacity: .8;
+    transform: scaleY(0.5);
+}
+
+.skew {
+    margin-top: 100px;
+    width: 150px;
+    height: 50px;
+    background: #ff0000;
+    opacity: .8;
+    transform: skew(20deg, 10deg); /* os X a Y */
+}
+
+.skewX {
+    margin-top: 100px;
+    width: 150px;
+    height: 50px;
+    background: #ff0000;
+    opacity: .8;
+    transform: skewX(45deg);
+}
+
+.skewY {
+    margin-top: 100px;
+    width: 150px;
+    height: 50px;
+    background: #ff0000;
+    opacity: .8;
+    transform: skewY(20deg);
+}
+
+.matrix {
+    margin-top: 100px;
+    width: 150px;
+    height: 50px;
+    background: #ff0000;
+    opacity: .8;
+    transform: matrix(1, -0.3, 0, 1, 0, 0); /* matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+}
+
+.rotateX {
+    margin-top: 100px;
+    width: 150px;
+    height: 50px;
+    background: #ff0000;
+    opacity: .8;
+    transform: rotateX(150deg);
+}
+
+.rotateY {
+    margin-top: 100px;
+    width: 150px;
+    height: 50px;
+    background: #ff0000;
+    opacity: .8;
+    transform: rotateY(140deg);
+}
+
+.rotateZ {
+    margin-top: 100px;
+    width: 150px;
+    height: 50px;
+    background: #ff0000;
+    opacity: .8;
+    transform: rotateZ(80deg);
+}
+
+.rotate3d {
+    margin-top: 100px;
+    width: 150px;
+    height: 50px;
+    background: #ff0000;
+    opacity: .8;
+    transform: rotate3d(1, 1, 1, 45deg); /* rotate3d(x,y,z,angle) */
+}

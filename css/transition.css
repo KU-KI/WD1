@@ -1,0 +1,23 @@
+﻿body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3vh;
+    background: #d0d0d0;
+    text-align: center;
+}
+
+div {
+    display: inline-block;
+    width: 50vh;
+    height: 50vh;
+    line-height: 50vh;
+    background: #ff0000;
+    transition: all 2s ease 50ms;
+}
+
+    div:hover {
+        background: #0026ff;
+        color: white;
+        border-radius: 50%;
+        font-size: 8vh;
+        margin-top: 25vh;
+    }
