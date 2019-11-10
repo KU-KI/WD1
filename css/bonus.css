@@ -1,0 +1,52 @@
+﻿h2 {
+    margin-top: 50px;
+    text-decoration:underline;
+}
+
+details {
+    border-radius: 4px;
+    padding: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+summary {
+    font-weight: bold;
+    margin: 5px;
+    padding: 3px;
+}
+
+*:focus {
+    outline: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 100px;
+}
+
+.my-modal {
+    margin-top: 20px;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+@supports (display: grid) {
+    /* Display:grid is supported, place my super cool grid layout here */
+}
+
+@supports not (display: grid) {
+    /* Display:grid - fallback to some older way to solve it, flexbox maybe :p?*/
+}
+
+.multicolumn-3 {
+    columns: 3;
+}

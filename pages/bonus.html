@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="utf-8" />
+    <title>BONUS</title>
+    <link rel="stylesheet" href="../css/bonus.css">
+    <link rel="shortcut icon" href="/favicon.ico" />
+</head>
+<body>
+
+    <h1>CSS3 BONUS</h1>
+
+
+    <h2>Elementy details a summary:</h2>
+    <details>
+        <summary>Klikni</summary>
+        <img src='http://placekitten.com/600/400' />
+    </details>
+
+
+    <h2>Modálne okno:</h2>
+    <div class='container'>
+        <button class='open-modal-btn'>Ukáž mi modálne okno!</button>
+
+        <dialog class='my-modal'>
+            <div class='modal-body'>
+                <p>Toto je modálne okno</p>
+                <img src='http://placekitten.com/400/200' />  <br />
+                <button class='close-modal-btn'>Zatvoriť</button>
+            </div>
+        </dialog>
+    </div>
+
+
+    <h2>Vlastnosť contenteditable:</h2>
+    <h3 contenteditable="true">Toto je priamo editovateľný text pomocou contenteditable="true"!</h3>
+
+
+    <h2>Element mark:</h2>
+    <p>
+        Nejaký text.
+        <mark>Toto je veľmi dôležitý text</mark>.
+        Toto je pokračovanie textu ...
+    </p>
+
+
+    <h2>Elementy meter a progress:</h2>
+    <p>3/10 študentov práve spí</p>
+    <meter value="3" min="0" max="10"></meter>
+    <br />
+    <p>60% mačiek je práve hladných</p>
+    <meter value="0.6"></meter>
+    <br />
+    <p>Tu sa malo niečo ukázať, ale stále sa to načíta ...</p>
+    <progress id='dynamic' max="100" value="0"></progress>
+
+
+    <h2>Viacstĺpcový text:</h2>
+    <p class='multicolumn-3'>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+    </p>
+
+
+    <script src="../js/bonus.js"></script>
+    <script src="../js/progress.js"></script>
+
+</body>
+</html>
