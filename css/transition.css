@@ -11,7 +11,7 @@ div {
     height: 50vh;
     line-height: 50vh;
     background: #ff0000;
-    transition: all 2s ease 50ms;
+    transition: all 2s ease 50ms; /* property duration timing-function delay|initial|inherit */
 }
 
     div:hover {

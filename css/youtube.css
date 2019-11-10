@@ -1,0 +1,44 @@
+﻿body {
+}
+
+* {
+    /*outline: 1px solid red;*/
+}
+
+.grid {
+    display: inline-grid;
+    grid-template-columns: 210px 1rem;
+    grid-template-rows: 1rem auto;
+    grid-gap: 0;
+    grid-template-areas: "napis1 napis1" "video napis2";
+    transform: rotate(20deg);
+    margin: 120px 40px;
+    transition: all 1s;
+}
+
+    .grid:hover {
+        transform: scale(2,2) rotate(0deg);
+        margin-left: 25vw;
+        margin-top: 25vh;
+    }
+
+.napis1 {
+    display: inline;
+    grid-area: napis1;
+}
+
+.napis2 {
+    grid-area: napis2;
+    writing-mode: vertical-rl;
+}
+
+.videoYoutube {
+    grid-area: video;
+    display: inline-block;
+    transition: all 1s;
+}
+
+iframe {
+    width: 210px;
+    height: 157px;
+}
