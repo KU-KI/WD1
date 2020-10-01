@@ -1,18 +1,18 @@
-KASKÁDOVÉ ŠTİLY
+KASKÃDOVÃ‰ Å TÃLY
 CSS = Cascading Style Sheet
-“Cascading” v tomto kontexte znamená postupné uplatòovanie zápisov od všeobecnejších ku špecifickejším.
+â€œCascadingâ€ v tomto kontexte znamenÃ¡ postupnÃ© uplatÅˆovanie zÃ¡pisov od vÅ¡eobecnejÅ¡Ã­ch ku Å¡pecifickejÅ¡Ã­m.
 
 
-Spôsoby pouitia CSS:
-	1. Externı:
+SpÃ´soby pouÅ¾itia CSS:
+	1. ExternÃ½:
 		<head>
 			<link rel="stylesheet" href="styles.css">
 		</head>
 
-	2. Internı:
+	2. InternÃ½:
 		<head>
 			<style>
-				/* CSS zápisy pre štılovanie html dokumentu */
+				/* CSS zÃ¡pisy pre Å¡tÃ½lovanie html dokumentu */
 			</style>
 		</head>
 
@@ -20,7 +20,7 @@ Spôsoby pouitia CSS:
 		<div style="background-color: red;"></div>
 
 
-Syntax pre jednotlivé zápisy CSS:
+Syntax pre jednotlivÃ© zÃ¡pisy CSS:
 	Selector {
 		vlastnost_1: hodnota_1;
 		vlastnost_2: hodnota_2;
@@ -28,48 +28,48 @@ Syntax pre jednotlivé zápisy CSS:
 	}
 
 
-Poradie dôleitosti CSS zápisov:
-	1: Inline zápisy					- max. priorita
-	2: Externı a Internı stylesheet
-	3: Defaultné hodnoty prehliadaèa
+Poradie dÃ´leÅ¾itosti CSS zÃ¡pisov:
+	1: Inline zÃ¡pisy					- max. priorita
+	2: ExternÃ½ a InternÃ½ stylesheet
+	3: DefaultnÃ© hodnoty prehliadaÃ¨a
 
-Priorita (váha) selektorov:
+Priorita (vÃ¡ha) selektorov:
 	1. id		- max. priorita
 	2. class
 	3. element
 
-Ak je priorita CSS zápisov rovnaká, platí zápis, ktorı je poslednı.
+Ak je priorita CSS zÃ¡pisov rovnakÃ¡, platÃ­ zÃ¡pis, ktorÃ½ je poslednÃ½.
 
 
-Najèastejšie pouívané selektory:
+NajÃ¨astejÅ¡ie pouÅ¾Ã­vanÃ© selektory:
 
-*					- všetko
+*					- vÅ¡etko
 element				- jeden element, tag (h1, p, div ...)
-.class				- príslušná trieda
-#id					- príslušnı identifikátor
+.class				- prÃ­sluÅ¡nÃ¡ trieda
+#id					- prÃ­sluÅ¡nÃ½ identifikÃ¡tor
 
-element, element	- platí pre viacero elementov naraz
-elementelement		- kadı element v elemente (napr.: kadé p v div)
-element > element	- element ako prvá úroveò v elemente (napr.: všetky p priamo pod div)
-element + element	- element hneï po elemente (napr.: p, ktoré nasleduje hneï po div)
+element, element	- platÃ­ pre viacero elementov naraz
+elementelement		- kaÅ¾dÃ½ element v elemente (napr.: kaÅ¾dÃ© p v div)
+element > element	- element ako prvÃ¡ ÃºroveÃ² v elemente (napr.: vÅ¡etky p priamo pod div)
+element + element	- element hneÃ¯ po elemente (napr.: p, ktorÃ© nasleduje hneÃ¯ po div)
 
-:hover				- zmena pri pohybe myšou nad elementom (napr.: .heading:hover)
-:focus				- platí pre práve aktívny element 
-:first-child		- prvı child element (napr.: li:first-child)
-:last-child			- poslednı child element
-:only-child			- platí pre child element, ktorı je jedinı pod parent elementom (napr.: jedinı li element v ul)
-:nth-child(odd) or tr:nth-child(2n+1)	- kadı nepárny element (1, 3, 5, ...)
-:nth-child(even) or tr:nth-child(2n)	- kadı párny element (2, 4, 6, ...)
+:hover				- zmena pri pohybe myÅ¡ou nad elementom (napr.: .heading:hover)
+:focus				- platÃ­ pre prÃ¡ve aktÃ­vny element 
+:first-child		- prvÃ½ child element (napr.: li:first-child)
+:last-child			- poslednÃ½ child element
+:only-child			- platÃ­ pre child element, ktorÃ½ je jedinÃ½ pod parent elementom (napr.: jedinÃ½ li element v ul)
+:nth-child(odd) or tr:nth-child(2n+1)	- kaÅ¾dÃ½ nepÃ¡rny element (1, 3, 5, ...)
+:nth-child(even) or tr:nth-child(2n)	- kaÅ¾dÃ½ pÃ¡rny element (2, 4, 6, ...)
 :nth-child(7)		- siedmy element
-:nth-child(-n+3)	- prvé tri elementy
+:nth-child(-n+3)	- prvÃ© tri elementy
 
-!important			- nedovolí ïalšiu zmenu (napr.: color: blue !important;)
+!important			- nedovolÃ­ ÄalÅ¡iu zmenu (napr.: color: blue !important;)
 
 
 ========================================
 EM vs REM:
 ________________________________________
-1em = aktuálna ve¾kos font-size
+1em = aktuÃ¡lna veÄ¾kosÅ¥ font-size
 
 h1 {
   font-size: 2em;     /* 1em = 16px */
@@ -81,7 +81,7 @@ p {
   margin-bottom: 1em; /* 1em = 16px */
 }
 ________________________________________
-1rem = aktuálna ve¾kos root/html font-size
+1rem = aktuÃ¡lna veÂ¾kosï¿½ root/html font-size
 
 h1 {
   font-size: 2rem;     /* 1rem = 32px */
