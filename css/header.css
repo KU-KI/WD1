@@ -1,19 +1,19 @@
 ﻿header.page-header {
-    background: left no-repeat url(../img/html5.png);
-    display: flex;
-    height: 230px;
-    min-width: 120px;
-    align-items: center;
-    color: #fff;
-    text-shadow: #000 0 0 .2em;
+  background: left no-repeat url(../img/html5.png);
+  display: flex;
+  height: 230px;
+  min-width: 120px;
+  align-items: center;
+  color: #fff;
+  text-shadow: #000 0 0 0.2em;
 }
 
-    header.page-header > h1 {
-        font: bold calc(em + 2 * (100vw - 120px) / 100) 'Dancing Script', cursive;
-        margin: 2%;
-        padding-left: 200px;
-    }
+header.page-header > h1 {
+  font: bold calc(em + 2 * (100vw - 120px) / 100) "Dancing Script", cursive;
+  margin: 2%;
+  padding-left: 200px;
+}
 
 li {
-    display: inline;
+  display: inline;
 }

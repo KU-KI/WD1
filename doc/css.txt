@@ -22,8 +22,8 @@ SpÙsoby pouûitia CSS:
 
 Syntax pre jednotlivÈ z·pisy CSS:
 	Selector {
-		vlastnosù_1: hodnota_1;
-		vlastnosù_2: hodnota_2;
+		vlastnost_1: hodnota_1;
+		vlastnost_2: hodnota_2;
 		...
 	}
 
