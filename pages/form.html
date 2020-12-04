@@ -1,81 +1,74 @@
 ﻿<!DOCTYPE html>
 <html lang="sk">
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>FORMULÁR</title>
-    <link rel="stylesheet" href="../css/form.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="../css/form.css" />
+  </head>
+  <body>
     <div class="form-main">
-        <div class="form-div">
-            <form action="form.html" method="get">
+      <div class="form-div">
+        <form action="form.html" method="GET">
+          <fieldset>
+            <legend>Formulár</legend>
 
-                <fieldset>
-                    <legend>Formulár</legend>
+            <p>
+              <input type="text" id="meno" name="meno" class="feedback-input" placeholder="Meno" required />
+            </p>
 
-                    <p>
-                        <input type="text" id="meno" name="meno" class="feedback-input" placeholder="Meno" required />
-                    </p>
+            <p>
+              <input type="email" id="email" name="email" class="feedback-input" placeholder="Email" required />
+            </p>
 
-                    <p>
-                        <input type="email" id="email" name="email" class="feedback-input" placeholder="Email" required />
-                    </p>
+            <div class="flex">
+              <label for="pohlavie">Pohlavie:</label>
+              <select id="pohlavie" name="pohlavie">
+                <option value="muž">muž</option>
+                <option value="žena">žena</option>
+              </select>
+            </div>
 
-                    <div class="flex">
-                        <label for="pohlavie">Pohlavie:</label>
-                        <select id="pohlavie" name="pohlavie">
-                            <option value="muž">muž</option>
-                            <option value="žena">žena</option>
-                        </select>
-                    </div>
+            <div class="flex">
+              <label for="vek">Vek:</label>
+              <input type="radio" id="vek" name="vek" value="do10" checked />do 10
+              <input type="radio" id="vek" name="vek" value="do30" />11-30
+              <input type="radio" id="vek" name="vek" value="nad30" />31 a viac
+            </div>
 
-                    <div class="flex">
-                        <label for="vek">Vek:</label>
-                        <input type="radio" id="vek" name="vek" value="do10" checked>do 10
-                        <input type="radio" id="vek" name="vek" value="do30">11-30
-                        <input type="radio" id="vek" name="vek" value="nad30">31 a viac
-                    </div>                 
+            <div class="flex">
+              <label for="situacia">Situácia:</label>
+              <input type="checkbox" id="situacia" name="situacia" value="ženatý" />ženatý
+              <input type="checkbox" id="situacia" name="situacia" value="deti" />deti
+              <input type="checkbox" id="situacia" name="situacia" value="bohatý" />bohatý
+              <input type="checkbox" id="situacia" name="situacia" value="VŠ" />VŠ
+            </div>
 
-                    <div class="flex">
-                        <label for="situacia">Situácia:</label>
-                        <input type="checkbox" id="situacia" name="situacia" value="ženatý">ženatý
-                        <input type="checkbox" id="situacia" name="situacia" value="deti">deti
-                        <input type="checkbox" id="situacia" name="situacia" value="bohatý">bohatý
-                        <input type="checkbox" id="situacia" name="situacia" value="VŠ">VŠ
-                    </div>
+            <div class="flex">
+              <label for="favFarba">Obľúbená farba:</label>
+              <input type="color" id="favFarba" name="favFarba" value="#ff0000" />
+            </div>
 
-                    <div class="flex">
-                        <label for="favFarba">Obľúbená farba:</label>
-                        <input type="color" id="favFarba" name="favFarba" value="#ff0000">
-                    </div>
+            <div class="flex">
+              <label for="narodeniny">Dátum narodenia:</label>
+              <input type="date" id="narodeniny" name="narodeniny" required />
+            </div>
 
-                    <div class="flex">
-                        <label for="narodeniny">Dátum narodenia:</label>
-                        <input type="date" id="narodeniny" name="narodeniny"  required>
-                    </div>
+            <div class="flex">
+              <label for="foto">Fotografia:</label>
+              <input type="file" id="foto" name="foto" required />
+            </div>
 
-                    <div class="flex">
-                        <label for="foto">Fotografia:</label>
-                        <input type="file" id="foto" name="foto" required>
-                    </div>
+            <p>
+              <textarea id="text" name="text" class="feedback-input" placeholder="Komentár"> </textarea>
+            </p>
 
-                    <p>
-                        <textarea id="text" name="text" class="feedback-input" placeholder="Komentár">
-                    </textarea>
-                    </p>
-
-                    <div class="submit">
-                        <input type="submit" id="odoslat" value="ODOSLAŤ"/>
-                        <div class="ease">
-                        </div>
-                    </div>
-
-                </fieldset>
-
-            </form>
-        </div>
+            <div class="submit">
+              <input type="submit" id="odoslat" value="ODOSLAŤ" />
+              <div class="ease"></div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
     </div>
-
-</body>
+  </body>
 </html>

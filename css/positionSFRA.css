@@ -1,87 +1,87 @@
 ﻿body {
-    font-family: Lucida Sans Typewriter,Lucida Console,monaco,Bitstream Vera Sans Mono,monospace;
-    font-weight: 900;
-    font-size: 0.8em;
-    text-align: center;
-    background: #ffd800 url(https://live.staticflickr.com/5026/5649633334_6f16531261_c.jpg) no-repeat center fixed;
-    /*background-size: cover;*/
-    background-size: 100% 100%;
+  font-family: Lucida Sans Typewriter, Lucida Console, monaco, Bitstream Vera Sans Mono, monospace;
+  font-weight: 900;
+  font-size: 0.8em;
+  text-align: center;
+  background: #ffd800 url(https://live.staticflickr.com/5026/5649633334_6f16531261_c.jpg) no-repeat center fixed;
+  /*background-size: cover;*/
+  background-size: 100% 100%;
 }
 
 .static_1 {
-    position: static; /*default*/
-    background: #909090;
-    border: 4px solid;
-    height: 300px;
-    margin-bottom: 20px;
+  position: static; /*default*/
+  background: #909090;
+  border: 4px solid;
+  height: 300px;
+  margin-bottom: 20px;
 }
 
 .static_2 {
-    position: static; /*default*/
-    background: #909090;
-    opacity: 0.6;
-    border: 4px solid;
-    height: 400px;
-    margin-bottom: 20px;
-    padding: 20px;
+  position: static; /*default*/
+  background: #909090;
+  opacity: 0.6;
+  border: 4px solid;
+  height: 400px;
+  margin-bottom: 20px;
+  padding: 20px;
 }
 
 .relative_1 {
-    position: relative;
-    background: #5cc9ff;
-    opacity: 0.6;
-    border: 4px solid blue;
-    height: 200px;
-    margin-bottom: 20px;
+  position: relative;
+  background: #5cc9ff;
+  opacity: 0.6;
+  border: 4px solid blue;
+  height: 200px;
+  margin-bottom: 20px;
 }
 
 .relative_2 {
-    position: relative;
-    background: #5cc9ff;
-    border: 4px solid blue;
-    height: 200px;
-    padding: 20px;
+  position: relative;
+  background: #5cc9ff;
+  border: 4px solid blue;
+  height: 200px;
+  padding: 20px;
 }
 
 .absolute_1 {
-    position: absolute;
-    background: #fe9191;
-    opacity: 0.6;
-    border: 4px solid red;
-    width: 100px;
-    height: 100px;
-    left: 20px;
-    top: 20px;
+  position: absolute;
+  background: #fe9191;
+  opacity: 0.6;
+  border: 4px solid red;
+  width: 100px;
+  height: 100px;
+  left: 20px;
+  top: 20px;
 }
 
 .absolute_2 {
-    position: absolute;
-    background: #fe9191;
-    /*opacity: 0.6;*/
-    border: 4px solid red;
-    height: 100px;
-    left: 0px;
-    top: 0px;
+  position: absolute;
+  background: #fe9191;
+  /*opacity: 0.6;*/
+  border: 4px solid red;
+  height: 100px;
+  left: 0px;
+  top: 0px;
 }
 
 .absolute_3 {
-    position: absolute;
-    background: #fe9191;
-    /*opacity: 0.6;*/
-    border: 4px solid red;
-    height: 50px;
-    bottom: 2px;
-    right: 2px;
+  position: absolute;
+  background: #fe9191;
+  /*opacity: 0.6;*/
+  border: 4px solid red;
+  height: 50px;
+  bottom: 2px;
+  right: 2px;
 }
 
 .fixed_1 {
-    position: fixed;
-    background: #67ff5d;
-    opacity: 0.6;
-    border: 4px solid green;
-    height: 100px;
-    width: 200px;
-    margin-bottom: 20px;
-    top: 30px;
-    right: 0px;
+  position: fixed;
+  background: #67ff5d;
+  opacity: 0.6;
+  border: 4px solid green;
+  height: 100px;
+  width: 200px;
+  margin-bottom: 20px;
+  top: 30px;
+  right: 0px;
 }
