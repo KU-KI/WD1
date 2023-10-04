@@ -41,7 +41,7 @@ Priorita (váha) selektorov:
 Ak je priorita CSS zápisov rovnaká, platí zápis, ktorý je posledný.
 
 
-Najèastejšie používané selektory:
+Najčastejšie používané selektory:
 
 *					- všetko
 element				- jeden element, tag (h1, p, div ...)
@@ -50,8 +50,8 @@ element				- jeden element, tag (h1, p, div ...)
 
 element, element	- platí pre viacero elementov naraz
 elementelement		- každý element v elemente (napr.: každé p v div)
-element > element	- element ako prvá úroveò v elemente (napr.: všetky p priamo pod div)
-element + element	- element hneï po elemente (napr.: p, ktoré nasleduje hneï po div)
+element > element	- element ako prvá úroveň v elemente (napr.: všetky p priamo pod div)
+element + element	- element hneď po elemente (napr.: p, ktoré nasleduje hneď po div)
 
 :hover				- zmena pri pohybe myšou nad elementom (napr.: .heading:hover)
 :focus				- platí pre práve aktívny element 
@@ -81,7 +81,7 @@ p {
   margin-bottom: 1em; /* 1em = 16px */
 }
 ________________________________________
-1rem = aktuálna ve¾kos� root/html font-size
+1rem = aktuálna veľkosť root/html font-size
 
 h1 {
   font-size: 2rem;     /* 1rem = 32px */
