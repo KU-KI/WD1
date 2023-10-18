@@ -39,14 +39,6 @@ summary {
     align-items: center;
 }
 
-@supports (display: grid) {
-    /* Display:grid is supported, place my super cool grid layout here */
-}
-
-@supports not (display: grid) {
-    /* Display:grid - fallback to some older way to solve it, flexbox maybe :p?*/
-}
-
 .multicolumn-3 {
     columns: 3;
 }

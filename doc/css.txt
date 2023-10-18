@@ -31,7 +31,7 @@ Syntax pre jednotlivé zápisy CSS:
 Poradie dôležitosti CSS zápisov:
 	1: Inline zápisy					- max. priorita
 	2: Externý a Interný stylesheet
-	3: Defaultné hodnoty prehliadaèa
+	3: Defaultné hodnoty prehliadača
 
 Priorita (váha) selektorov:
 	1. id		- max. priorita
