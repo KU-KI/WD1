@@ -1,0 +1,27 @@
+{
+  "name": "wd1",
+  "version": "1.0.0",
+  "description": "Príklady a cvičenia pre Webový dizajn 1",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "start": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KU-KI/WD1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KU-KI/WD1/issues"
+  },
+  "homepage": "https://github.com/KU-KI/WD1#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

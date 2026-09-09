@@ -1,4 +1,4 @@
-﻿/*flex-direction: row | row-reverse | column | column-reverse;*/
+/*flex-direction: row | row-reverse | column | column-reverse;*/
 
 .flex-container.row {
     -webkit-flex-direction: row;

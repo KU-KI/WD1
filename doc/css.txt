@@ -49,7 +49,7 @@ element				- jeden element, tag (h1, p, div ...)
 #id					- príslušný identifikátor
 
 element, element	- platí pre viacero elementov naraz
-elementelement		- každý element v elemente (napr.: každé p v div)
+element element		- každý element v elemente (napr.: každé p v div)
 element > element	- element ako prvá úroveň v elemente (napr.: všetky p priamo pod div)
 element + element	- element hneď po elemente (napr.: p, ktoré nasleduje hneď po div)
 

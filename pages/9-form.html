@@ -1,14 +1,18 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="sk">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FORMULÁR</title>
     <link rel="stylesheet" href="../css/form.css" />
   </head>
   <body>
+    <div style="padding: 10px 20px;">
+      <a href="../index.html" style="color: #fff; text-decoration: none;">← Späť na prehľad lekcií</a>
+    </div>
     <div class="form-main">
       <div class="form-div">
-        <form action="form.html" method="GET">
+        <form action="9-form.html" method="GET">
           <fieldset>
             <legend>Formulár</legend>
 
@@ -17,7 +21,7 @@
             </p>
 
             <p>
-              <input type="email" id="email" name="email" class="feedback-input" placeholder="Email" value="@" required />
+              <input type="email" id="email" name="email" class="feedback-input" placeholder="Email" required />
             </p>
 
             <div class="flex">
@@ -29,18 +33,25 @@
             </div>
 
             <div class="flex">
-              <label for="vek">Vek:</label>
-              <input type="radio" id="vek" name="vek" value="do10" checked />do 10
-              <input type="radio" id="vek" name="vek" value="do30" />11-30
-              <input type="radio" id="vek" name="vek" value="nad30" />31 a viac
+              <label>Vek:</label>
+              <input type="radio" id="vek-1" name="vek" value="do10" checked />
+              <label for="vek-1">do 10</label>
+              <input type="radio" id="vek-2" name="vek" value="do30" />
+              <label for="vek-2">11-30</label>
+              <input type="radio" id="vek-3" name="vek" value="nad30" />
+              <label for="vek-3">31 a viac</label>
             </div>
 
             <div class="flex">
-              <label for="situacia">Situácia:</label>
-              <input type="checkbox" id="situacia" name="situacia" value="ženatý" />ženatý
-              <input type="checkbox" id="situacia" name="situacia" value="deti" />deti
-              <input type="checkbox" id="situacia" name="situacia" value="bohatý" />bohatý
-              <input type="checkbox" id="situacia" name="situacia" value="VŠ" />VŠ
+              <label>Situácia:</label>
+              <input type="checkbox" id="situacia-zenaty" name="situacia" value="ženatý" />
+              <label for="situacia-zenaty">ženatý</label>
+              <input type="checkbox" id="situacia-deti" name="situacia" value="deti" />
+              <label for="situacia-deti">deti</label>
+              <input type="checkbox" id="situacia-bohaty" name="situacia" value="bohatý" />
+              <label for="situacia-bohaty">bohatý</label>
+              <input type="checkbox" id="situacia-vs" name="situacia" value="VŠ" />
+              <label for="situacia-vs">VŠ</label>
             </div>
 
             <div class="flex">

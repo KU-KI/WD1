@@ -1,4 +1,4 @@
-﻿body {
+body {
     /* if the user's computer has Arial, use that, if not Helvetica, 
   then fall back to the operating system's default sans-serif font */
     font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;

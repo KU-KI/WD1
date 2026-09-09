@@ -1,24 +1,653 @@
-﻿<!DOCTYPE html>
-
+<!DOCTYPE html>
 <html lang="sk">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Názov webstránky</title>
+    <title>Webový dizajn 1 | Prehľad cvičení a lekcií</title>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/dashboard.css">
   </head>
 
   <body>
-    <header>
-      <div>LOGO</div>
-      <nav></nav>
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="hero-content">
+        <div class="badge">Katolícka univerzita v Ružomberku • Katedra informatiky</div>
+        <h1>Webový dizajn 1</h1>
+        <p>
+          Praktická zbierka cvičení, ukážok a vzdelávacích materiálov pre tvorbu moderných,
+          prístupných a responzívnych webových stránok pomocou HTML5 a CSS3.
+        </p>
+        <div class="hero-actions">
+          <a href="#cvicenia" class="btn btn-primary">Zobraziť cvičenia</a>
+          <a href="./doc/css.txt" class="btn btn-secondary" target="_blank">CSS Ťahák (doc/css.txt)</a>
+        </div>
+      </div>
     </header>
-    <main>
-      <section>
-        <article></article>
-        <article></article>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+      <div class="stats-container">
+        <div class="stat-item">
+          <h3>27</h3>
+          <p>Praktických cvičení</p>
+        </div>
+        <div class="stat-item">
+          <h3>HTML5 & CSS3</h3>
+          <p>Moderné štandardy</p>
+        </div>
+        <div class="stat-item">
+          <h3>Flexbox & Grid</h3>
+          <p>Pokročilé layouty</p>
+        </div>
+        <div class="stat-item">
+          <h3>100%</h3>
+          <p>Responzívny kód</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container" id="cvicenia">
+      <!-- Search & Filters -->
+      <div class="controls-bar">
+        <div class="search-wrapper">
+          <span class="search-icon">🔍</span>
+          <input
+            type="search"
+            id="searchInput"
+            class="search-input"
+            placeholder="Hľadať cvičenie (napr. flexbox, grid, formulár, video)..."
+            aria-label="Hľadať v cvičeniach"
+          />
+        </div>
+        <div class="category-tags">
+          <button class="filter-btn active" data-filter="all">Všetky</button>
+          <button class="filter-btn" data-filter="html">HTML Základy</button>
+          <button class="filter-btn" data-filter="forms">Formuláre a tabuľky</button>
+          <button class="filter-btn" data-filter="media">Multimédiá & Fonty</button>
+          <button class="filter-btn" data-filter="flexbox">Flexbox</button>
+          <button class="filter-btn" data-filter="grid">Grid</button>
+          <button class="filter-btn" data-filter="effects">Pozície & Animácie</button>
+          <button class="filter-btn" data-filter="bonus">Bonusy</button>
+        </div>
+      </div>
+
+      <!-- 1. Základy HTML a sémantika -->
+      <section class="section-block" data-category="html">
+        <div class="section-header">
+          <div class="section-icon">&lt;/&gt;</div>
+          <h2>1. Základy HTML a sémantika</h2>
+        </div>
+        <div class="cards-grid">
+          <article class="card" data-category="html">
+            <div class="card-top">
+              <span class="card-number">Lekcia 02</span>
+              <span class="source-badge">pages/2-index.html</span>
+            </div>
+            <h3>Základné HTML príkazy</h3>
+            <p>Zoznamy (ul, ol, dl), odseky, nadpisy, inline formátovanie, odkazy, obrázky, tabuľky a vkladanie iframe.</p>
+            <div class="card-tags">
+              <span class="card-tag">HTML5</span>
+              <span class="card-tag">Sémantika</span>
+              <span class="card-tag">Odkazy</span>
+            </div>
+            <div class="card-footer">
+              <a href="./pages/2-index.html" class="card-link">Otvoriť cvičenie ➔</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="html">
+            <div class="card-top">
+              <span class="card-number">Lekcia 03</span>
+              <span class="source-badge">pages/3-header.html</span>
+            </div>
+            <h3>Hlavička stránky (Header)</h3>
+            <p>Tvorba a štýlovanie sémantického prvku &lt;header&gt; spolu s navigačným menu &lt;nav&gt; a zoznamom.</p>
+            <div class="card-tags">
+              <span class="card-tag">&lt;header&gt;</span>
+              <span class="card-tag">&lt;nav&gt;</span>
+              <span class="card-tag">Menu</span>
+            </div>
+            <div class="card-footer">
+              <a href="./pages/3-header.html" class="card-link">Otvoriť cvičenie ➔</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="html">
+            <div class="card-top">
+              <span class="card-number">Lekcia 04</span>
+              <span class="source-badge">pages/4-footer.html</span>
+            </div>
+            <h3>Pätička stránky (Footer)</h3>
+            <p>Sémantická pätička &lt;footer&gt; so sociálnymi ikonami, autorskými právami a prístupnými alt popismi.</p>
+            <div class="card-tags">
+              <span class="card-tag">&lt;footer&gt;</span>
+              <span class="card-tag">Ikony</span>
+              <span class="card-tag">a11y</span>
+            </div>
+            <div class="card-footer">
+              <a href="./pages/4-footer.html" class="card-link">Otvoriť cvičenie ➔</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="html">
+            <div class="card-top">
+              <span class="card-number">Lekcia 05</span>
+              <span class="source-badge">pages/5-aside.html</span>
+            </div>
+            <h3>Bočný panel (Aside)</h3>
+            <p>Použitie sémantického prvku &lt;aside&gt; pre doplnkový obsah a bočné poznámky k hlavnému textu.</p>
+            <div class="card-tags">
+              <span class="card-tag">&lt;aside&gt;</span>
+              <span class="card-tag">Sémantika</span>
+              <span class="card-tag">Typografia</span>
+            </div>
+            <div class="card-footer">
+              <a href="./pages/5-aside.html" class="card-link">Otvoriť cvičenie ➔</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="html">
+            <div class="card-top">
+              <span class="card-number">Lekcia 06</span>
+              <span class="source-badge">pages/6-section.html</span>
+            </div>
+            <h3>Sekcie a články (Section & Article)</h3>
+            <p>Hierarchické členenie obsahu pomocou &lt;section&gt; a &lt;article&gt; na príklade predpovede počasia.</p>
+            <div class="card-tags">
+              <span class="card-tag">&lt;section&gt;</span>
+              <span class="card-tag">&lt;article&gt;</span>
+              <span class="card-tag">SVG pozadie</span>
+            </div>
+            <div class="card-footer">
+              <a href="./pages/6-section.html" class="card-link">Otvoriť cvičenie ➔</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 2. Tabuľky a formuláre -->
+      <section class="section-block" data-category="forms">
+        <div class="section-header">
+          <div class="section-icon">📋</div>
+          <h2>2. Tabuľky a formuláre</h2>
+        </div>
+        <div class="cards-grid">
+          <article class="card" data-category="forms">
+            <div class="card-top">
+              <span class="card-number">Lekcia 07</span>
+              <span class="source-badge">pages/7-table1.html</span>
+            </div>
+            <h3>Tabuľka 1 - Horizontálny posun</h3>
+            <p>Štýlovanie dátových tabuliek pomocou CSS, zlučovanie okrajov (border-collapse) a podpora pretečenia.</p>
+            <div class="card-tags">
+              <span class="card-tag">&lt;table&gt;</span>
+              <span class="card-tag">thead / tbody</span>
+              <span class="card-tag">Pretečenie</span>
+            </div>
+            <div class="card-footer">
+              <a href="./pages/7-table1.html" class="card-link">Otvoriť cvičenie ➔</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="forms">
+            <div class="card-top">
+              <span class="card-number">Lekcia 08</span>
+              <span class="source-badge">pages/8-table2.html</span>
+            </div>
+            <h3>Tabuľka 2 - Responzívny Flexbox</h3>
+            <p>Pokročilá technika transformácie tabuľky do dlaždicového flexbox zobrazenia na menších displejoch.</p>
+            <div class="card-tags">
+              <span class="card-tag">Responzivita</span>
+              <span class="card-tag">@media queries</span>
+              <span class="card-tag">Flexbox</span>
+            </div>
+            <div class="card-footer">
+              <a href="./pages/8-table2.html" class="card-link">Otvoriť cvičenie ➔</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="forms">
+            <div class="card-top">
+              <span class="card-number">Lekcia 09</span>
+              <span class="source-badge">pages/9-form.html</span>
+            </div>
+            <h3>Interaktívny webový formulár</h3>
+            <p>Komplexný formulár s rôznymi typmi vstupov (text, email, select, radio, checkbox, color, date, file) a validáciou.</p>
+            <div class="card-tags">
+              <span class="card-tag">&lt;form&gt;</span>
+              <span class="card-tag">HTML5 Validácia</span>
+              <span class="card-tag">Unikátne ID</span>
+            </div>
+            <div class="card-footer">
+              <a href="./pages/9-form.html" class="card-link">Otvoriť cvičenie ➔</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 3. Typografia a multimédiá -->
+      <section class="section-block" data-category="media">
+        <div class="section-header">
+          <div class="section-icon">🎨</div>
+          <h2>3. Typografia, grafika a multimédiá</h2>
+        </div>
+        <div class="cards-grid">
+          <article class="card" data-category="media">
+            <div class="card-top">
+              <span class="card-number">Lekcia 10</span>
+              <span class="source-badge">pages/10-fonty.html</span>
+            </div>
+            <h3>Webová typografia a fonty</h3>
+            <p>Pripojenie a použitie externých písem z Google Fonts a pravidlá pre dobrú typografickú hierarchiu.</p>
+            <div class="card-tags">
+              <span class="card-tag">Google Fonts</span>
+              <span class="card-tag">@import</span>
+              <span class="card-tag">Typografia</span>
+            </div>
+            <div class="card-footer">
+              <a href="./pages/10-fonty.html" class="card-link">Otvoriť cvičenie ➔</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="media">
+            <div class="card-top">
+              <span class="card-number">Lekcia 11</span>
+              <span class="source-badge">pages/11-imageText.html</span>
+            </div>
+            <h3>Text s obrázkovou výplňou</h3>
+            <p>Efektná moderná CSS technika pomocou background-clip: text na vykreslenie fotografie do obrysu písma.</p>
+            <div class="card-tags">
+              <span class="card-tag">background-clip</span>
+              <span class="card-tag">CSS efekty</span>
+              <span class="card-tag">Vizuál</span>
+            </div>
+            <div class="card-footer">
+              <a href="./pages/11-imageText.html" class="card-link">Otvoriť cvičenie ➔</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="media">
+            <div class="card-top">
+              <span class="card-number">Lekcia 12</span>
+              <span class="source-badge">pages/12-audio-video-iframe.html</span>
+            </div>
+            <h3>Audio, video a vložené mapy</h3>
+            <p>Natívne HTML5 prehrávanie zvuku (&lt;audio&gt;), videa (&lt;video&gt;) a integrácia máp OSM a Google Maps.</p>
+            <div class="card-tags">
+              <span class="card-tag">&lt;audio&gt;</span>
+              <span class="card-tag">&lt;video&gt;</span>
+              <span class="card-tag">&lt;iframe&gt;</span>
+            </div>
+            <div class="card-footer">
+              <a href="./pages/12-audio-video-iframe.html" class="card-link">Otvoriť cvičenie ➔</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="media">
+            <div class="card-top">
+              <span class="card-number">Lekcia 26</span>
+              <span class="source-badge">pages/26-youtube.html</span>
+            </div>
+            <h3>Responzívne YouTube video</h3>
+            <p>Vloženie videa z YouTube s využitím CSS Grid pre vycentrovanie a optimálny pomer strán.</p>
+            <div class="card-tags">
+              <span class="card-tag">YouTube</span>
+              <span class="card-tag">Iframe</span>
+              <span class="card-tag">Grid</span>
+            </div>
+            <div class="card-footer">
+              <a href="./pages/26-youtube.html" class="card-link">Otvoriť cvičenie ➔</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 4. Flexbox rozloženie -->
+      <section class="section-block" data-category="flexbox">
+        <div class="section-header">
+          <div class="section-icon">📐</div>
+          <h2>4. Flexbox rozloženie (Layout)</h2>
+        </div>
+        <div class="cards-grid">
+          <article class="card" data-category="flexbox">
+            <div class="card-top">
+              <span class="card-number">Lekcia 13</span>
+              <span class="source-badge">pages/13-flexbox.html</span>
+            </div>
+            <h3>Interaktívne Flexbox laboratórium</h3>
+            <p>Živá interaktívna aplikácia umožňujúca prepínať flex-direction, flex-wrap, justify-content a align-items.</p>
+            <div class="card-tags">
+              <span class="card-tag">Interaktívne</span>
+              <span class="card-tag">Playground</span>
+              <span class="card-tag">Flexbox API</span>
+            </div>
+            <div class="card-footer">
+              <a href="./pages/13-flexbox.html" class="card-link">Otvoriť cvičenie ➔</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="flexbox">
+            <div class="card-top">
+              <span class="card-number">Lekcia 14</span>
+              <span class="source-badge">pages/14-flexbox1.html</span>
+            </div>
+            <h3>Flexbox 1 - Pomer a pevné medzery</h3>
+            <p>Ukážka fixného percentuálneho pomeru stĺpcov a výpočtu medzier medzi stĺpcami.</p>
+            <div class="card-tags">
+              <span class="card-tag">Pomer šírok</span>
+              <span class="card-tag">Medzery</span>
+              <span class="card-tag">12 stĺpcov</span>
+            </div>
+            <div class="card-footer">
+              <a href="./pages/14-flexbox1.html" class="card-link">Otvoriť cvičenie ➔</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="flexbox">
+            <div class="card-top">
+              <span class="card-number">Lekcia 15</span>
+              <span class="source-badge">pages/15-flexbox2.html</span>
+            </div>
+            <h3>Flexbox 2 - Dvojstĺpcový layout</h3>
+            <p>Tvorba štandardného rozloženia: hlavný obsah (content) a bočný panel (sidebar) s grid mriežkou.</p>
+            <div class="card-tags">
+              <span class="card-tag">Sidebar</span>
+              <span class="card-tag">Content</span>
+              <span class="card-tag">Flex layout</span>
+            </div>
+            <div class="card-footer">
+              <a href="./pages/15-flexbox2.html" class="card-link">Otvoriť cvičenie ➔</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="flexbox">
+            <div class="card-top">
+              <span class="card-number">Lekcia 16</span>
+              <span class="source-badge">pages/16-flexbox3.html</span>
+            </div>
+            <h3>Flexbox 3 - Základné zarovnanie</h3>
+            <p>Základy centrovania flex položiek a kontrola ich rozťahovania v horizontálnom a vertikálnom smere.</p>
+            <div class="card-tags">
+              <span class="card-tag">Zarovnanie</span>
+              <span class="card-tag">Centrovanie</span>
+            </div>
+            <div class="card-footer">
+              <a href="./pages/16-flexbox3.html" class="card-link">Otvoriť cvičenie ➔</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="flexbox">
+            <div class="card-top">
+              <span class="card-number">Lekcia 17</span>
+              <span class="source-badge">pages/17-flexbox_gallery1.html</span>
+            </div>
+            <h3>Flexbox Galéria 1</h3>
+            <p>Dlaždicová galéria obrázkov a kariet využívajúca flex-wrap pre automatické zalamovanie riadkov.</p>
+            <div class="card-tags">
+              <span class="card-tag">flex-wrap</span>
+              <span class="card-tag">Galéria</span>
+              <span class="card-tag">Dlaždice</span>
+            </div>
+            <div class="card-footer">
+              <a href="./pages/17-flexbox_gallery1.html" class="card-link">Otvoriť cvičenie ➔</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="flexbox">
+            <div class="card-top">
+              <span class="card-number">Lekcia 18</span>
+              <span class="source-badge">pages/18-flexbox_gallery2.html</span>
+            </div>
+            <h3>Flexbox Galéria 2</h3>
+            <p>Galéria s variabilnou šírkou a kombináciou s pevnou dvanásťstĺpcovou flex mriežkou.</p>
+            <div class="card-tags">
+              <span class="card-tag">Galéria</span>
+              <span class="card-tag">Fixed Gutter</span>
+            </div>
+            <div class="card-footer">
+              <a href="./pages/18-flexbox_gallery2.html" class="card-link">Otvoriť cvičenie ➔</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 5. CSS Grid rozloženie -->
+      <section class="section-block" data-category="grid">
+        <div class="section-header">
+          <div class="section-icon">🔲</div>
+          <h2>5. CSS Grid rozloženie</h2>
+        </div>
+        <div class="cards-grid">
+          <article class="card" data-category="grid">
+            <div class="card-top">
+              <span class="card-number">Lekcia 19</span>
+              <span class="source-badge">pages/19-grid.html</span>
+            </div>
+            <h3>CSS Grid - Oblasti (Areas)</h3>
+            <p>Kompletná štruktúra stránky (header, ľavý panel, sekcia, pravý panel, footer) cez grid-template-areas.</p>
+            <div class="card-tags">
+              <span class="card-tag">grid-template-areas</span>
+              <span class="card-tag">gap</span>
+              <span class="card-tag">Grid layout</span>
+            </div>
+            <div class="card-footer">
+              <a href="./pages/19-grid.html" class="card-link">Otvoriť cvičenie ➔</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="grid">
+            <div class="card-top">
+              <span class="card-number">Lekcia 20</span>
+              <span class="source-badge">pages/20-grid2.html</span>
+            </div>
+            <h3>CSS Grid 2 - Mriežka a stĺpce</h3>
+            <p>Mriežkový systém so stĺpcovými a riadkovými pravidlami, pomenovaním a jednotkami v Gride.</p>
+            <div class="card-tags">
+              <span class="card-tag">grid-template-columns</span>
+              <span class="card-tag">Jednotky</span>
+            </div>
+            <div class="card-footer">
+              <a href="./pages/20-grid2.html" class="card-link">Otvoriť cvičenie ➔</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="grid">
+            <div class="card-top">
+              <span class="card-number">Lekcia 21</span>
+              <span class="source-badge">pages/21-flexbox_grid.html</span>
+            </div>
+            <h3>Flexbox vs. Grid porovnanie</h3>
+            <p>Priama komparácia realizácie rovnakej webstránky pomocou jednodimenzionálneho Flexboxu a dvojdimenzionálneho Gridu.</p>
+            <div class="card-tags">
+              <span class="card-tag">Porovnanie</span>
+              <span class="card-tag">Flexbox</span>
+              <span class="card-tag">Grid</span>
+            </div>
+            <div class="card-footer">
+              <a href="./pages/21-flexbox_grid.html" class="card-link">Otvoriť cvičenie ➔</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 6. Pozície a animácie -->
+      <section class="section-block" data-category="effects">
+        <div class="section-header">
+          <div class="section-icon">✨</div>
+          <h2>6. CSS Pozície, transformácie a prechody</h2>
+        </div>
+        <div class="cards-grid">
+          <article class="card" data-category="effects">
+            <div class="card-top">
+              <span class="card-number">Lekcia 22</span>
+              <span class="source-badge">pages/22-positionSFRA.html</span>
+            </div>
+            <h3>CSS Pozície (Static, Fixed, Relative, Absolute)</h3>
+            <p>Praktická demonštrácia štyroch kľúčových typov pozicionovania v CSS a ich vzájomného vnorenia.</p>
+            <div class="card-tags">
+              <span class="card-tag">position</span>
+              <span class="card-tag">absolute</span>
+              <span class="card-tag">relative</span>
+              <span class="card-tag">fixed</span>
+            </div>
+            <div class="card-footer">
+              <a href="./pages/22-positionSFRA.html" class="card-link">Otvoriť cvičenie ➔</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="effects">
+            <div class="card-top">
+              <span class="card-number">Lekcia 23</span>
+              <span class="source-badge">pages/23-transform.html</span>
+            </div>
+            <h3>CSS Transformácie - Základný prehľad</h3>
+            <p>Zoznam a vizualizácia transformačných funkcií: translate, rotate, scale, skew, matrix a ich 3D variantov.</p>
+            <div class="card-tags">
+              <span class="card-tag">transform</span>
+              <span class="card-tag">rotate</span>
+              <span class="card-tag">scale</span>
+              <span class="card-tag">3D</span>
+            </div>
+            <div class="card-footer">
+              <a href="./pages/23-transform.html" class="card-link">Otvoriť cvičenie ➔</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="effects">
+            <div class="card-top">
+              <span class="card-number">Lekcia 24</span>
+              <span class="source-badge">pages/24-transform1.html</span>
+            </div>
+            <h3>CSS Transformácie na kartách</h3>
+            <p>Prehľadné interaktívne karty demonštrujúce jednotlivé transformácie priamo pri pohybe kurzora.</p>
+            <div class="card-tags">
+              <span class="card-tag">Karty</span>
+              <span class="card-tag">Vizuálne demo</span>
+              <span class="card-tag">Transform</span>
+            </div>
+            <div class="card-footer">
+              <a href="./pages/24-transform1.html" class="card-link">Otvoriť cvičenie ➔</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="effects">
+            <div class="card-top">
+              <span class="card-number">Lekcia 25</span>
+              <span class="source-badge">pages/25-transition.html</span>
+            </div>
+            <h3>CSS Plynulé prechody (Transitions)</h3>
+            <p>Využitie vlastnosti transition, časovania ease, trvania a oneskorenia pri hover stave prvku.</p>
+            <div class="card-tags">
+              <span class="card-tag">transition</span>
+              <span class="card-tag">:hover</span>
+              <span class="card-tag">Animácie</span>
+            </div>
+            <div class="card-footer">
+              <a href="./pages/25-transition.html" class="card-link">Otvoriť cvičenie ➔</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 7. Bonusy a moderné prvky -->
+      <section class="section-block" data-category="bonus">
+        <div class="section-header">
+          <div class="section-icon">🎁</div>
+          <h2>7. Pokročilé vlastnosti a bonusy</h2>
+        </div>
+        <div class="cards-grid">
+          <article class="card" data-category="bonus">
+            <div class="card-top">
+              <span class="card-number">Lekcia 27</span>
+              <span class="source-badge">pages/27-bonus.html</span>
+            </div>
+            <h3>HTML5 & CSS3 Bonus</h3>
+            <p>Natívne rozbaľovacie menu (&lt;details&gt;), modálne dialógové okno (&lt;dialog&gt;), &lt;meter&gt;, &lt;progress&gt; a viacstĺpcový text.</p>
+            <div class="card-tags">
+              <span class="card-tag">&lt;dialog&gt;</span>
+              <span class="card-tag">&lt;details&gt;</span>
+              <span class="card-tag">multicolumn</span>
+              <span class="card-tag">Progress</span>
+            </div>
+            <div class="card-footer">
+              <a href="./pages/27-bonus.html" class="card-link">Otvoriť cvičenie ➔</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="bonus">
+            <div class="card-top">
+              <span class="card-number">Lekcia 28</span>
+              <span class="source-badge">pages/28-bonus1.html</span>
+            </div>
+            <h3>Zarovnanie a centrovanie v CSS</h3>
+            <p>Všetky možnosti horizontálneho a vertikálneho centrovania pomocou Flexboxu a automatických okrajov (margin: auto).</p>
+            <div class="card-tags">
+              <span class="card-tag">Centrovanie</span>
+              <span class="card-tag">justify-content</span>
+              <span class="card-tag">align-items</span>
+            </div>
+            <div class="card-footer">
+              <a href="./pages/28-bonus1.html" class="card-link">Otvoriť cvičenie ➔</a>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
-    <footer></footer>
+
+    <!-- Footer -->
+    <footer>
+      <p><strong>Webový dizajn 1</strong> • Katolícka univerzita v Ružomberku • Katedra informatiky</p>
+      <p>
+        <a href="./doc/css.txt" target="_blank">Študijný súhrn CSS</a> •
+        <a href="./README.md">Inštrukcie k projektu</a> •
+        <a href="https://github.com/KU-KI/WD1" target="_blank" rel="noopener noreferrer">GitHub repozitár</a>
+      </p>
+    </footer>
+
+    <!-- Client-side filter script -->
+    <script>
+      const searchInput = document.getElementById('searchInput');
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const cards = document.querySelectorAll('.card');
+      const sectionBlocks = document.querySelectorAll('.section-block');
+
+      function filterCards() {
+        const query = searchInput.value.toLowerCase().trim();
+        const activeCategory = document.querySelector('.filter-btn.active').dataset.filter;
+
+        cards.forEach(card => {
+          const cardCategory = card.dataset.category;
+          const text = card.textContent.toLowerCase();
+          const matchesQuery = query === '' || text.includes(query);
+          const matchesCategory = activeCategory === 'all' || cardCategory === activeCategory;
+
+          if (matchesQuery && matchesCategory) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        // Hide empty sections
+        sectionBlocks.forEach(section => {
+          const visibleCards = section.querySelectorAll('.card[style="display: flex;"]');
+          const allCards = section.querySelectorAll('.card');
+          const hasVisible = Array.from(allCards).some(c => c.style.display !== 'none');
+          section.style.display = hasVisible ? 'block' : 'none';
+        });
+      }
+
+      searchInput.addEventListener('input', filterCards);
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterButtons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          filterCards();
+        });
+      });
+    </script>
   </body>
 </html>

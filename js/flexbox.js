@@ -1,4 +1,4 @@
-﻿function changeFlex(e, t) {
+function changeFlex(e, t) {
   for (
     var n = document.querySelectorAll("." + e),
       l = document.querySelector("#" + t),

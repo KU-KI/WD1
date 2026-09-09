@@ -1,4 +1,4 @@
-﻿const elem = document.getElementById('dynamic');
+const elem = document.getElementById('dynamic');
 
 setInterval(() => {
     elem.value += 1;
